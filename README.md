@@ -36,9 +36,10 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 
 ## High-Level Group Policy and Account Managing Steps
 
+- Group Policy Configuration
 - Account Lockout
-- Group Policy Creation
 - Account Recovery
+- Password Reset
 - Enable/Disable Accounts
 - Log Observation
 
@@ -48,13 +49,13 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 
 <summary>
 
-### 🔒 Part 1: Account Lockout
+### 🔒 Part 1: Group Policy Configuration
 
 </summary>
 
-<ins>First, we will lockout a pre-created user account to setup for account recovery.</ins>
+*First, we will configure a group policy to practice account lockoout.*
 
-*Log into **DC-1** as **mydomain.com\jane_admin***
+- Log into DC-1: as `mydomain.com\jane_admin`
 
 - Disconnect: `Client-1 from Remote Desktop (RDP)`
 
@@ -62,21 +63,6 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 
 *Later, we will review these actions in the Event Logs for verification and analysis.*
 
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2997cf73-1121-4273-83dc-f248e9468781">
-
-</details>
-
-<details>
-
-<summary>
-
-### 🔒 Part 2: Group Policy Creation
-
-</summary>
-
-<ins>Configuring a Group Policy<ins>:
-
-*Back inside DC-1*
 
 - Search and Go To: `gpmc.msc` (Group Policy Management Console - Microsoft)
 
@@ -250,9 +236,19 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 </details>
 
-<br>
-<br>
-<br>
+<details>
+
+<summary>
+
+### 🔒 Part 2: Account Lockout
+
+</summary>
+
+*Now that the Group Policy is created we can attempt 6+ failed logins on Client-1 with a created user account to verify lockout in ADUC.*
+
+- Choose a User Account
+
+- Attempt 6+ failed logons
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/ade102b9-562b-4eed-9c39-a34a55f28761">
 
@@ -260,11 +256,29 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Account Lockout<ins>:
+
+*This message will pop up when your users account has been successfully locked out.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/45dcd2b2-9263-4c1d-8618-3516cc1e36e9">
 
-<br>
-<br>
-<br>
+</details>
+
+<details>
+
+<summary>
+
+### 🔒 Part 3: Account Recovery
+
+</summary>
+
+<ins>Account Recovery<ins>:
+
+*Go back into DC-1 (as mydomain.com\jane_admin) and go to ADUC.*
+
+- Right-Click: `mydomain.com`
+
+- Select: `Find`
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/d9b18e31-984d-4a8e-94b4-d45cd8293116">
 
@@ -272,11 +286,29 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Account Recovery<ins>:
+
+- Search: `User Account` (Example: bav.vow)
+
+- Double-Click: `User Account` (Example: bav.vow)
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/ededc232-8ed3-4cf3-ad8f-901e5718848f">
 
 <br>
 <br>
 <br>
+
+<ins>Account Recovery<ins>:
+
+*Inside User Account Properties*
+
+- Go To: `Account`
+
+- Check: the `Unlock account. This account is currently locked out on this Active Directory Domain Controller.` box
+
+- Select: `Apply`
+
+- Click: `OK`
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/b5f8615a-8dba-41d0-9193-db8acc203cc8">
 
@@ -284,17 +316,33 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Account Recovery<ins>:
+
+*Now you will be able to successfully log into Client-1 with your created user account.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/517e88e3-6647-446b-a924-320eadb6dcd2">
 
 <br>
 <br>
 <br>
 
+<ins>Account Recovery<ins>:
+
+*Once inside Client-1 as your created user account you can open powershell and run the command **whoami** to notice that you're logged in as your created user account.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/a685ac6d-aaed-462f-88d0-02f4209f13e8">
 
-<br>
-<br>
-<br>
+</details>
+
+<details>
+
+<summary>
+
+### 🔒 Part 4: Password Reset
+
+</summary>
+
+Next we'll practice reseting the password for your created user account.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/77702170-e664-4e1c-a9ed-edbf3b8490dd">
 
