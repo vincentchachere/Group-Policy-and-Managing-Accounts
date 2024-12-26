@@ -1,4 +1,4 @@
-=<br>
+<br>
 
 <p align="center">
 <img width="700" src="https://github.com/user-attachments/assets/9b6b0a51-6411-4e01-96c5-1bb31e6fd986" alt="Microsoft Active Directory Logo"/>
