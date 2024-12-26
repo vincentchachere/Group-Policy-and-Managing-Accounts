@@ -57,13 +57,6 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 
 - Log into DC-1: as `mydomain.com\jane_admin`
 
-- Disconnect: `Client-1 from Remote Desktop (RDP)`
-
-- Pick a random user account you previously created, [in this lab](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration), and attempt to log in with it 10 times with a bad password.
-
-*Later, we will review these actions in the Event Logs for verification and analysis.*
-
-
 - Search and Go To: `gpmc.msc` (Group Policy Management Console - Microsoft)
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/67d9d84d-b83f-423e-a6bf-8f8cc099d95a">
@@ -246,9 +239,11 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 *Now that the Group Policy is created we can attempt 6+ failed logins on Client-1 with a created user account to verify lockout in ADUC.*
 
-- Choose a User Account
+- Disconnect: from `Client-1 from Remote Desktop (RDP)` if you haven't already
 
-- Attempt 6+ failed logons
+- Pick a random user account you previously created, [in this lab](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration), and attempt 6+ failed logons.
+
+*Later, we will review these actions in the Event Logs for verification and analysis.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/ade102b9-562b-4eed-9c39-a34a55f28761">
 
