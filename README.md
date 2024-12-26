@@ -267,13 +267,11 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 </summary>
 
-<ins>Account Recovery<ins>:
-
-*Go back into DC-1 (as mydomain.com\jane_admin) and go to ADUC.*
+*Go back inside DC-1 as **mydomain.com\jane_admin** and go to ADUC.*
 
 - Right-Click: `mydomain.com`
 
-- Select: `Find`
+- Select: `Find` to find your created user account and unlock the currently locked out account
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/d9b18e31-984d-4a8e-94b4-d45cd8293116">
 
@@ -337,7 +335,15 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 </summary>
 
-Next we'll practice reseting the password for your created user account.*
+*Next we'll practice reseting the password for your created user account.*
+
+- Log into DC-1 as: `mydomain.com\jane_admin`
+
+- Go To: `ADUC` and find you user account like you did earlier
+
+- Right-Click: `User Account` (Example: bav.vow)
+
+- Select: `Reset Password`
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/77702170-e664-4e1c-a9ed-edbf3b8490dd">
 
@@ -345,17 +351,39 @@ Next we'll practice reseting the password for your created user account.*
 <br>
 <br>
 
+<ins>Password Reset</ins>:
+
+- Type In: `Your New Password`
+
+- Check: the `Unlock the user's account` box
+
+- Select: `OK`
+
+*Your new password is now created.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/1e37e51e-40ff-4cd0-a048-688e900db166">
 
 <br>
 <br>
 <br>
 
+<ins>Password Reset</ins>:
+
+*Logout of Client-1 and log back into Client-1 with your new user accounts password.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/c0f1ec00-21a8-4d15-987f-d50f039b7ae0">
 
-<br>
-<br>
-<br>
+</details>
+
+<details>
+
+<summary>
+
+### 🔒 Part 5: Enabling/Disabling User Accounts
+
+</summary>
+
+
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/affd1223-979b-48b4-b092-0e7b6411df29">
 
@@ -395,9 +423,17 @@ Next we'll practice reseting the password for your created user account.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2d6a8e88-f74a-403d-9c7d-ef531efa7e46">
 
-<br>
-<br>
-<br>
+</details>
+
+<details>
+
+<summary>
+
+### 🔒 Part 6: Log Observation
+
+</summary>
+
+
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2d48f55e-1090-4a71-8e03-58f6efefd35b">
 
@@ -424,6 +460,8 @@ Next we'll practice reseting the password for your created user account.*
 <br>
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/4e7810c3-8169-42f8-9bcd-3ef40b6f2cfe">
+
+</details>
 
 <h2 align="center">Final Thoughts</h2>
 
