@@ -383,7 +383,19 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 </summary>
 
+*Now it's time to test enabling and disabling user accounts.*
 
+- Log into: DC-1 as **mydomain.com\jane_admin**
+
+- Go To: `ADUC`
+
+- Search for: your `User Account` (Example: bav.vow)
+
+- Right-Click: `User Account` (Example: bav.vow)
+
+- Select: `Disable Account`
+
+*Take notice of the little icon next to  your created user's account.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/affd1223-979b-48b4-b092-0e7b6411df29">
 
@@ -391,11 +403,19 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Enabling/Disabling User Accounts</ins>:
+
+*Select **OK** when this window pops up*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/5cc6a87c-9ed2-4e56-8995-c5a8d40622a2">
 
 <br>
 <br>
 <br>
+
+<ins>Enabling/Disabling User Accounts</ins>:
+
+*Go back into ADUC inside DC-1 and search for your created user account. You will notice the little icon next to  your created user account now has a down arrow on it, indicating it is now diasbled.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/651a4194-9edc-4e09-b944-c427931a3e93">
 
@@ -403,11 +423,19 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Enabling/Disabling User Accounts</ins>:
+
+*Try logging into Client-1 with the created user's account you just disabled. You will notice it won't let you log into it now that the specific user account is now disabled.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/c93d593e-8b15-4dec-93a2-50318b9fffbc">
 
 <br>
 <br>
 <br>
+
+<ins>Enabling/Disabling User Accounts</ins>:
+
+
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/e1b18b01-93f8-4cb4-bad4-57220a50254d">
 
@@ -415,13 +443,41 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Enabling/Disabling User Accounts</ins>:
+
+
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/fc71e9e5-6358-4794-85b8-3a5940054c87">
 
 <br>
 <br>
 <br>
 
+<ins>Enabling/Disabling User Accounts</ins>:
+
+
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2d6a8e88-f74a-403d-9c7d-ef531efa7e46">
+
+<br>
+<br>
+<br>
+
+<ins>Enabling/Disabling User Accounts</ins>:
+
+
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2d48f55e-1090-4a71-8e03-58f6efefd35b">
+
+<br>
+<br>
+<br>
+
+<ins>Enabling/Disabling User Accounts</ins>:
+
+
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/3f9d26d9-a31f-4388-ba80-425310bf1a96">
 
 </details>
 
@@ -433,19 +489,6 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 </summary>
 
-
-
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2d48f55e-1090-4a71-8e03-58f6efefd35b">
-
-<br>
-<br>
-<br>
-
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/3f9d26d9-a31f-4388-ba80-425310bf1a96">
-
-<br>
-<br>
-<br>
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/ee51e554-914a-4ddb-b218-c86fdf6e3259">
 
