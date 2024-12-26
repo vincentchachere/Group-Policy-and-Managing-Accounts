@@ -1,4 +1,4 @@
-<br>
+=<br>
 
 <p align="center">
 <img width="700" src="https://github.com/user-attachments/assets/9b6b0a51-6411-4e01-96c5-1bb31e6fd986" alt="Microsoft Active Directory Logo"/>
@@ -34,7 +34,7 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 - Windows Server 2022
 - Windows 10 (21H2)
 
-## High-Level Active Directory Deployment and Configuration Steps
+## High-Level Group Policy and Account Managing Steps
 
 - 
 - 
