@@ -1,4 +1,4 @@
-=<br>
+![image](https://github.com/user-attachments/assets/dea3124e-9c5b-4287-85ca-fc7ec07b98e0)![image](https://github.com/user-attachments/assets/c98ff2df-0bb2-4740-b2fe-d787a1de02bd)=<br>
 
 <p align="center">
 <img width="700" src="https://github.com/user-attachments/assets/9b6b0a51-6411-4e01-96c5-1bb31e6fd986" alt="Microsoft Active Directory Logo"/>
@@ -74,7 +74,11 @@ First, we will lockout a pre-created user account to setup for account recovery.
 
 </summary>
 
+<ins>Configuring a Group Policy<ins>:
 
+*Back inside DC-1*
+
+- Search and Go To: `gpmc.msc` (Group Policy Management Console - Microsoft)
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/67d9d84d-b83f-423e-a6bf-8f8cc099d95a">
 
@@ -82,13 +86,29 @@ First, we will lockout a pre-created user account to setup for account recovery.
 <br>
 <br>
 
+<ins>Configuring a Group Policy<ins>:
+
+- Expand: `Forest: mydomain.com` > `Domains` > `mydomain.com`
+
+- Right-Click: `Default Domain Policy`
+
+- Select: `Edit`
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/491a7a4d-12cc-4fb3-b52f-d1f018ed027c">
 
 <br>
 <br>
 <br>
 
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/dec2211c-aba6-4361-9bdb-079523de8dc5">
+<ins>Configuring a Group Policy<ins>:
+
+Now, you are inside **Group Policy Management Editor** where you can edit group policies.
+
+- Expand: `Computer Configuration` > `Policies` > `Windows Settings` > `Security Settings` > `Account Policies`
+
+- Select: `Account Lockout Policy`
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/078b88cd-f967-4346-9175-8d9788b11fdf">
 
 <br>
 <br>
