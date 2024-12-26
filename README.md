@@ -108,11 +108,25 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 - Select: `Account Lockout Policy`
 
+- Select: `Account lockout duration`
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/078b88cd-f967-4346-9175-8d9788b11fdf">
 
 <br>
 <br>
 <br>
+
+<ins>Configuring a Group Policy<ins>:
+
+*Within Account lockout **duration** Properties*
+
+- Check: the `Define this policy setting` box
+
+- Account is locked out for: `30 minutes`
+
+- Select: `Apply`
+
+*It will end you to the **Suggested Value Changes** window after this.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/f4f96834-19db-4c97-84de-625a4b9b5a7b">
 
@@ -120,11 +134,33 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Configuring a Group Policy<ins>:
+
+*When the **Suggested Value Changes** window pops up*
+
+- Click: `OK`
+
+- Click: `OK` again when back inside Account lockout duration Properties then..
+
+- Open: `Account lockout threshold`
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/048278cd-4361-4d99-bfe7-8f2ae1915eeb">
 
 <br>
 <br>
 <br>
+
+<ins>Configuring a Group Policy<ins>:
+
+*Within Account lockout **threshold** Properties*
+
+- Check: the `Define this policy setting` box
+
+- Account will lock out after: `5 invalid logon attempts`
+
+- Select: `Apply`
+
+*It will end you to the **Suggested Value Changes** window after this.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/7203ae6d-354c-4353-9228-211131cbd87c">
 
@@ -132,11 +168,31 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Configuring a Group Policy<ins>:
+
+*When the **Suggested Value Changes** window pops up*
+
+- Click: `OK`
+
+- Click: `OK` again when back inside Account lockout threshold Properties
+
+*Next, we will check the **Default Domain Policy**, which will be inside Group Policy Management (not Group Policy Management Editor) to verify that the configured Group Policy settings have been applied.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/80c28508-e99d-4435-95d4-1591387bf2bb">
 
 <br>
 <br>
 <br>
+
+<ins>Configuring a Group Policy<ins>:
+
+*Back inside Group Policy Management*
+
+- Expand: `Forest: mydomain.com` > `Domains` > `mydomain.com`
+
+- Select: `Default Domain Policy`
+
+- Click: `Close`
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/679a2fe7-097d-4509-9c9b-f357f76c3233">
 
@@ -144,11 +200,25 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Configuring a Group Policy<ins>:
+
+*Within Default Domain Policy*
+
+- Select: the `Settings` tab
+
+- Scroll down to: `Computer Configuration (Enabled)`
+
+*In the Account Policies/Account Lockout policy section you will see the Group Policy settings that you've just configured have been applied.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/e6512855-2c3a-4ffa-b3d5-8052e054aa56">
 
 <br>
 <br>
 <br>
+
+<ins>Configuring a Group Policy<ins>:
+
+*Before we execute the next step you may need to add your domain user account (jane_admin) to **Security Filteing** in order to force apply the 
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/e87fd670-2cab-45fb-8f86-bd245c67a20f">
 
