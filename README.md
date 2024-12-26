@@ -435,7 +435,13 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 <ins>Enabling/Disabling User Accounts</ins>:
 
+*Now you can re-enable the user's account, then log in once the account is back active.*
 
+- Go to ADUC inside DC-1 and search for: your `User's Account` (Example: bav.vow)
+
+- Right-Click: your `User's Account` (Example: bav.vow)
+
+- Select: `Enable Account`
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/e1b18b01-93f8-4cb4-bad4-57220a50254d">
 
@@ -445,7 +451,7 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 <ins>Enabling/Disabling User Accounts</ins>:
 
-
+*Select **OK** when this window pops up*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/fc71e9e5-6358-4794-85b8-3a5940054c87">
 
@@ -455,7 +461,7 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 <ins>Enabling/Disabling User Accounts</ins>:
 
-
+*Notice the icon next to the user's account no longer shows a down arrow, indicating the account has been re-enabled.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2d6a8e88-f74a-403d-9c7d-ef531efa7e46">
 
@@ -465,7 +471,7 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 <ins>Enabling/Disabling User Accounts</ins>:
 
-
+*Log back into your created user's account.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2d48f55e-1090-4a71-8e03-58f6efefd35b">
 
@@ -475,7 +481,7 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 <ins>Enabling/Disabling User Accounts</ins>:
 
-
+*If you go to powershell and run the command **whoami** you'll see the created user's account will populate.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/3f9d26d9-a31f-4388-ba80-425310bf1a96">
 
@@ -489,6 +495,13 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 </summary>
 
+*In this final part of the lab we will observe the failed login attempts we performed earlier.*
+
+- In DC-1 Search for: `eventvwr.msc` (Event Viewer - Microsoft)
+
+- Select: `Run as Administrator`
+
+*Event Viewer is a Windows tool that displays detailed logs of system, application, and security events.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/ee51e554-914a-4ddb-b218-c86fdf6e3259">
 
@@ -496,11 +509,25 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <br>
 <br>
 
+<ins>Log Observation</ins>:
+
+*Log in as your **Domain Admin User** using the password you created or that account then select **Yes**.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/afaadee4-ca16-4fe1-8c7f-3c19f89ee568">
 
 <br>
 <br>
 <br>
+
+<ins>Log Observation</ins>:
+
+*Within Event Viewer*
+
+- Expand: `Windows Logs`
+
+- Select: `Security`
+
+*Scroll down to find **Audit Failure** entries. Note the date and time differences between each failed logon attempts. Under **Task Category**, you'll see **logon** as the type for each of these tasks you performed.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/4e7810c3-8169-42f8-9bcd-3ef40b6f2cfe">
 
