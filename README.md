@@ -52,7 +52,7 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 
 </summary>
 
-First, we will lockout a pre-created user account to setup for account recovery.
+<ins>First, we will lockout a pre-created user account to setup for account recovery.</ins>
 
 *Log into **DC-1** as **mydomain.com\jane_admin***
 
@@ -218,29 +218,37 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 <ins>Configuring a Group Policy<ins>:
 
-*Before we execute the next step you may need to add your domain user account (jane_admin) to **Security Filteing** in order to force apply the 
+*Now we will force apply the group policy inside command prompt as an administrator to immediately apply it, avoiding the 90-minute default propagation delay for all user accounts.*
 
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/e87fd670-2cab-45fb-8f86-bd245c67a20f">
+- Log back into Client-1 as: `mydomain.com\jane_admin`
+
+- Run: `Command Prompt as an Administrator`
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/97cb95cd-4102-4cd7-9481-1acebe72c4c4">
+
+<br>
+<br>
+<br>
+
+<ins>Configuring a Group Policy<ins>:
+
+- Run the Command: `gpupdate /force` to force apply the group policy
+
+*As you'll see the group policy has been successfully forced aplied.*
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/21352492-32cc-441d-ae08-8432bfe7780f">
+
+<br>
+<br>
+<br>
+
+<ins>Configuring a Group Policy<ins>:
+
+*If you run the command **gpresult /r** you will be able to see the last time the group policy was applied.**
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/50d10077-1819-4d93-8797-5e6003947306">
 
 </details>
-
-<br>
-<br>
-<br>
-
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/3208e8ab-6e60-4710-860c-f16a478aba46">
-
-<br>
-<br>
-<br>
-
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/347c8c3b-c485-4337-b1bd-f9d78971236a">
-
-<br>
-<br>
-<br>
-
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/e74559fb-52f9-4988-a69b-937c00529158">
 
 <br>
 <br>
@@ -374,3 +382,8 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/4e7810c3-8169-42f8-9bcd-3ef40b6f2cfe">
 
+<h2 align="center">Final Thoughts</h2>
+
+
+
+☎️ For any questions or just to connect you can reach me at: www.linkedin.com/in/vincentchachere
