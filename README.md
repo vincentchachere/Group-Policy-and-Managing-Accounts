@@ -8,7 +8,7 @@
 
 <br>
 
-<h1 align="center">Group Policy and Account Managing</h1> 
+<h1 align="center">Group Policy and Account Management</h1> 
 <br>
 
 <p align="center">
@@ -36,19 +36,45 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 
 ## High-Level Group Policy and Account Managing Steps
 
-- 
-- 
-- 
-- 
-- 
+- Account Lockout
+- Group Policy Creation
+- Account Recovery
+- Enable/Disable Accounts
+- Log Observation
 
 ## Configuration Steps
 
+<details>
+
+<summary>
+
+### 🔒 Part 1: Account Lockout
+
+</summary>
+
+First, we will lockout a pre-created user account to setup for account recovery.
+
+*Log into **DC-1** as **mydomain.com\jane_admin***
+
+- Disconnect: `Client-1 from Remote Desktop (RDP)`
+
+- Pick a random user account you previously created, [in this lab](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration), and attempt to log in with it 10 times with a bad password.
+
+*Later, we will review these actions in the Event Logs for verification and analysis.*
+
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2997cf73-1121-4273-83dc-f248e9468781">
 
-<br>
-<br>
-<br>
+</details>
+
+<details>
+
+<summary>
+
+### 🔒 Part 2: Group Policy Creation
+
+</summary>
+
+
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/67d9d84d-b83f-423e-a6bf-8f8cc099d95a">
 
@@ -105,6 +131,8 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 <br>
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/e87fd670-2cab-45fb-8f86-bd245c67a20f">
+
+</details>
 
 <br>
 <br>
