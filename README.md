@@ -24,7 +24,7 @@ This lab builds on the previous one [here](https://github.com/vincentchachere/Ac
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Active Directory Domain Services
+- Active Directory Domain Services (AD DS)
 - Group Policy Management Console (GPMC)
 - Event Viewer
 - PowerShell
