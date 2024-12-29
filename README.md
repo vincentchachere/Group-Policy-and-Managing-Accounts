@@ -18,7 +18,7 @@
 
 ## Lab Overview
 
-This lab builds on the previous one [here](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration/edit/main/README.md). This lab focuses on learning key Active Directory skills like managing account lockouts, password resets, enabling/disabling accounts, and analyzing event logs. You’ll also configure Group Policy to enforce security settings, such as account lockout thresholds, and test these configurations in a realistic environment.
+This lab focuses on learning key Active Directory skills like managing account lockouts, password resets, enabling/disabling accounts, and analyzing event logs. We’ll also configure Group Policy to enforce security settings, such as account lockout thresholds, and test these configurations in a realistic environment.
 
 ## Environments and Technologies Used
 
@@ -536,6 +536,8 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 <h2 align="center">Final Thoughts</h2>
 
 In this lab, we enhanced our Active Directory management skills, including handling account lockouts, password resets, and event log analysis. By configuring Group Policy and testing these settings in a realistic environment, we gained practical experience in maintaining secure and efficient user management within an Active Directory domain.
+
+To continue the Active Directory series, explore [Network File Shares and Permissions](https://github.com/vincentchachere/Network-File-Shares-and-Permissions).
 
 Thank you for following along with this project. Your time and effort in learning and implementing these concepts are greatly appreciated.
 
