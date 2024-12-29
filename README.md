@@ -18,7 +18,7 @@
 
 ## Lab Overview
 
-This lab focuses on learning key Active Directory skills like managing account lockouts, password resets, enabling/disabling accounts, and analyzing event logs. We’ll also configure group policy to enforce security settings, such as account lockout thresholds, and test these configurations in a realistic environment.
+Building on the previous [Active Directory Deployment and Configuration](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration) lab, this lab focuses on learning key Active Directory skills like managing account lockouts, password resets, enabling/disabling accounts, and analyzing event logs. We’ll also configure group policy to enforce security settings, such as account lockout thresholds, and test these configurations in a realistic environment.
 
 ## Environments and Technologies Used
 
