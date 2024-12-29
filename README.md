@@ -537,7 +537,7 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 In this lab, we enhanced our Active Directory management skills, including handling account lockouts, password resets, and event log analysis. By configuring group policy and testing these settings in a realistic environment, we gained practical experience in maintaining secure and efficient user management within an Active Directory domain.
 
-To continue the Active Directory series, explore the [Network File Shares and Permissions](https://github.com/vincentchachere/Network-File-Shares-and-Permissions) or [DNS Resolution](https://github.com/vincentchachere/DNS-Fundamentals/blob/main/README.md) lab.
+To continue the Active Directory series, explore the [Network File Shares and Permissions](https://github.com/vincentchachere/Network-File-Shares-and-Permissions) or [DNS Resolution](https://github.com/vincentchachere/DNS-Fundamentals) lab.
 
 Thank you for following along with this project. Your time and effort in learning and implementing these concepts are greatly appreciated.
 
