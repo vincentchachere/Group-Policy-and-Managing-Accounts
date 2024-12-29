@@ -535,7 +535,7 @@ Now, you are inside **Group Policy Management Editor** where you can edit group 
 
 <h2 align="center">Final Thoughts</h2>
 
-In this lab, we enhanced our Active Directory management skills, including handling account lockouts, password resets, and event log analysis. By configuring Group Policy and testing these settings in a realistic environment, we gained practical experience in maintaining secure and efficient user management within an Active Directory domain.
+In this lab, we enhanced our Active Directory management skills, including handling account lockouts, password resets, and event log analysis. By configuring group policy and testing these settings in a realistic environment, we gained practical experience in maintaining secure and efficient user management within an Active Directory domain.
 
 To continue the Active Directory series, explore [Network File Shares and Permissions](https://github.com/vincentchachere/Network-File-Shares-and-Permissions).
 
